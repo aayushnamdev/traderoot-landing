@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Why 93% of Prop Firm Traders Never Get Paid — TradeRoot</title>
+  <meta name="description" content="FPFX Technology analyzed 300,000+ prop firm accounts and found only 7% ever receive a payout. The failure mode is almost never the strategy. Here's what the data says — and what it means." />
+  <link rel="canonical" href="https://traderoot.space/articles/why-prop-traders-fail.html" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://traderoot.space/articles/why-prop-traders-fail.html" />
+  <meta property="og:title" content="Why 93% of Prop Firm Traders Never Get Paid" />
+  <meta property="og:description" content="FPFX Technology analyzed 300,000+ prop firm accounts. Only 7% ever received a payout. The failure mode is almost never the strategy." />
+  <meta property="og:image" content="https://traderoot.space/assets/og-image.png" />
+  <meta property="og:site_name" content="TradeRoot" />
+  <meta property="article:published_time" content="2026-05-16" />
+  <meta property="article:author" content="Aayush Namdev" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@traderoot" />
+  <meta name="twitter:title" content="Why 93% of Prop Firm Traders Never Get Paid" />
+  <meta name="twitter:description" content="FPFX Technology analyzed 300,000+ accounts. Only 7% ever received a payout. The failure is almost never the strategy." />
+  <meta name="twitter:image" content="https://traderoot.space/assets/og-image.png" />
+
+  <!-- Article + Person + Organization schema -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Why 93% of Prop Firm Traders Never Get Paid — And Why It's Rarely About Strategy",
+      "description": "FPFX Technology analyzed more than 300,000 prop firm accounts and found that only 7% of traders ever receive a single payout. The failure mode is almost never technical — it's behavioral. Here's what the data shows and what it means for how traders should approach the problem.",
+      "url": "https://traderoot.space/articles/why-prop-traders-fail.html",
+      "datePublished": "2026-05-16",
+      "dateModified": "2026-05-16",
+      "image": "https://traderoot.space/assets/og-image.png",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://traderoot.space/articles/why-prop-traders-fail.html"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Aayush Namdev",
+        "jobTitle": "Co-founder & Performance Coach",
+        "url": "https://traderoot.space/#aayush",
+        "description": "Funded prop trader (Apex Trader Funding $100K, Alpha Capital Group $100K) and MA Psychology candidate at Chandigarh University. Clinical training under Dr. Nitin Sethi and at Japneet Bakhshi Clinic.",
+        "knowsAbout": ["Trading psychology", "Prop firm evaluations", "Behavioral pattern analysis", "Performance coaching"]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TradeRoot",
+        "url": "https://traderoot.space",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://traderoot.space/assets/traderoot-logo.svg"
+        }
+      },
+      "keywords": ["prop firm failure rate", "prop trading psychology", "why traders fail prop firms", "trading behavioral patterns", "prop firm challenge statistics", "revenge trading", "trading discipline"],
+      "articleSection": "Trading Psychology",
+      "wordCount": 950,
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Only 1 in 20 Traders Pass Prop Firm Challenges, Reports The Funded Trader",
+          "url": "https://www.financemagnates.com/forex/only-1-in-20-traders-pass-prop-firm-challenges-reports-the-funded-trader/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Prop Firm Statistics: Success Rates, Industry Growth, and What the Data Actually Tells Traders",
+          "url": "https://statistics.ge/prop-firm-statistics/"
+        }
+      ]
+    }
+  ]
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --root-green:  #1C3A2E;
+      --warm-white:  #F7F5F0;
+      --stone:       #E8E4DC;
+      --amber:       #C8974A;
+      --charcoal:    #2D2D2B;
+      --muted:       #6B6B68;
+      --teal:        #5dcaa5;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--warm-white);
+      color: var(--charcoal);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    /* ── Nav ── */
+    nav {
+      background: var(--root-green);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    nav a.home {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--warm-white);
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    nav a.home img { height: 28px; width: auto; }
+    nav a.cta {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--amber);
+      text-decoration: none;
+      border: 1px solid rgba(200,151,74,0.4);
+      padding: 6px 16px;
+      border-radius: 4px;
+      transition: border-color 0.2s;
+    }
+    nav a.cta:hover { border-color: var(--amber); }
+
+    /* ── Hero ── */
+    .article-hero {
+      background: var(--root-green);
+      color: var(--warm-white);
+      padding: 4rem 2rem 3.5rem;
+      text-align: center;
+    }
+    .article-hero .label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1.2rem;
+    }
+    .article-hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 4vw, 2.9rem);
+      font-weight: 700;
+      line-height: 1.2;
+      max-width: 780px;
+      margin: 0 auto 1.2rem;
+    }
+    .article-hero .deck {
+      font-size: 1.1rem;
+      color: rgba(247,245,240,0.72);
+      max-width: 620px;
+      margin: 0 auto 2rem;
+      line-height: 1.65;
+    }
+    .byline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: rgba(247,245,240,0.6);
+    }
+    .byline strong { color: var(--warm-white); font-weight: 500; }
+    .byline .sep { opacity: 0.3; }
+
+    /* ── Body ── */
+    .article-body {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 5rem;
+    }
+
+    .article-body h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--root-green);
+      margin: 2.8rem 0 0.9rem;
+      line-height: 1.3;
+    }
+
+    .article-body p { margin-bottom: 1.3rem; }
+
+    .article-body a {
+      color: var(--root-green);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .article-body a:hover { color: var(--amber); }
+
+    /* Stat callout */
+    .stat-block {
+      background: var(--root-green);
+      color: var(--warm-white);
+      border-left: 4px solid var(--amber);
+      border-radius: 6px;
+      padding: 1.6rem 2rem;
+      margin: 2.2rem 0;
+    }
+    .stat-block .number {
+      font-family: 'Fraunces', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--amber);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .stat-block .stat-label {
+      font-size: 1rem;
+      color: rgba(247,245,240,0.85);
+      margin-bottom: 0.6rem;
+    }
+    .stat-block .stat-source {
+      font-size: 0.8rem;
+      color: rgba(247,245,240,0.45);
+    }
+    .stat-block .stat-source a {
+      color: rgba(247,245,240,0.55);
+    }
+
+    /* Pull quote */
+    blockquote {
+      border-left: 3px solid var(--amber);
+      padding: 0.5rem 1.5rem;
+      margin: 2rem 0;
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--root-green);
+      line-height: 1.55;
+    }
+
+    /* Inline stat row */
+    .stat-row {
+      background: var(--stone);
+      border-radius: 6px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.6rem 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .stat-row .item { text-align: center; }
+    .stat-row .item .n {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--root-green);
+      line-height: 1;
+    }
+    .stat-row .item .l {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    /* Author bio */
+    .author-bio {
+      background: var(--stone);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-top: 4rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+    .author-bio img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .author-bio .bio-name {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--root-green);
+      margin-bottom: 0.2rem;
+    }
+    .author-bio .bio-title {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+    .author-bio .bio-text {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--charcoal);
+    }
+
+    /* CTA strip */
+    .article-cta {
+      background: var(--root-green);
+      color: var(--warm-white);
+      text-align: center;
+      padding: 3.5rem 2rem;
+    }
+    .article-cta h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+    .article-cta p {
+      color: rgba(247,245,240,0.7);
+      max-width: 480px;
+      margin: 0 auto 1.8rem;
+      font-size: 0.95rem;
+    }
+    .btn-amber {
+      display: inline-block;
+      background: var(--amber);
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 12px 28px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-amber:hover { opacity: 0.88; }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+    }
+    footer a { color: rgba(255,255,255,0.4); }
+
+    @media (max-width: 600px) {
+      .author-bio { flex-direction: column; }
+      .article-hero h1 { font-size: 1.65rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <a class="home" href="https://traderoot.space">
+    <img src="/assets/favicon.svg" alt="TradeRoot" />
+    TradeRoot
+  </a>
+  <a class="cta" href="https://cal.com/traderoot/free-10-min-call">Free 10-min call</a>
+</nav>
+
+<!-- Hero -->
+<header class="article-hero">
+  <span class="label">Trading Psychology</span>
+  <h1>Why 93% of Prop Firm Traders Never Get Paid — And Why It's Rarely About Strategy</h1>
+  <p class="deck">FPFX Technology analyzed more than 300,000 prop firm accounts. Only 7% ever received a single payout. The failure mode is almost never technical.</p>
+  <div class="byline">
+    <strong>Aayush Namdev</strong>
+    <span class="sep">·</span>
+    Co-founder, TradeRoot
+    <span class="sep">·</span>
+    Funded prop trader
+    <span class="sep">·</span>
+    May 2026
+  </div>
+</header>
+
+<!-- Body -->
+<main class="article-body">
+
+  <h2>The number most prop firms don't advertise</h2>
+
+  <p>
+    FPFX Technology analyzed more than 300,000 prop firm accounts across the industry and published a figure that should stop every trader before their next challenge purchase:
+  </p>
+
+  <div class="stat-block">
+    <div class="number">93%</div>
+    <div class="stat-label">of prop firm traders never receive a single payout</div>
+    <div class="stat-source">
+      FPFX Technology, 300,000+ accounts analyzed ·
+      <a href="https://www.financemagnates.com/forex/only-1-in-20-traders-pass-prop-firm-challenges-reports-the-funded-trader/" target="_blank" rel="noopener">Finance Magnates, 2025</a>
+    </div>
+  </div>
+
+  <p>
+    The Funded Trader's internal data corroborates this from a different angle: 90–95% of clients fail the initial challenge phase, and of those who do pass, only around 20% go on to qualify for payouts — bringing the all-in success rate to 1–2% of all clients.
+  </p>
+
+  <p>
+    Industry-wide, first-attempt pass rates sit between 5% and 10%. These are not outliers from particularly difficult firms. They are the norm across the sector.
+  </p>
+
+  <div class="stat-row">
+    <div class="item">
+      <div class="n">5–10%</div>
+      <div class="l">first-attempt pass rate, industry average</div>
+    </div>
+    <div class="item">
+      <div class="n">7%</div>
+      <div class="l">of all challenge buyers ever receive a payout</div>
+    </div>
+    <div class="item">
+      <div class="n">300K+</div>
+      <div class="l">accounts in FPFX Technology dataset</div>
+    </div>
+  </div>
+
+  <h2>The failure mode is behavioral, not technical</h2>
+
+  <p>
+    Across the industry, analysts consistently identify the same pattern behind evaluation failures: Maximum Trailing Drawdown breaches, Consistency Clause violations, position oversizing after a loss.
+  </p>
+
+  <p>
+    These are not strategy failures. A trader does not breach a drawdown limit because their setup was wrong. They breach it because of what they did after their setup was right but the trade went against them — revenge trading, averaging down, removing a stop they had already placed.
+  </p>
+
+  <blockquote>
+    The trader who moves their stop loss usually knows, in real time, that they are making a mistake. The knowledge does not stop the behaviour. It rarely even slows it down.
+  </blockquote>
+
+  <p>
+    As a funded prop trader — Apex Trader Funding ($100K), Alpha Capital Group ($100K) — I have been in that loop. The question that took me longer to ask than it should have: if I know what I'm doing is wrong, and I do it anyway, the problem is not what I know. The problem is something underneath the knowing.
+  </p>
+
+  <h2>Why "just be more disciplined" is the wrong diagnosis</h2>
+
+  <p>
+    The standard prescription for trading failure is discipline: journal your trades, follow your rules, control your emotions, build better habits. This advice is not incorrect. It is insufficient in a specific and important way.
+  </p>
+
+  <p>
+    Discipline operates at the level of behaviour. What discipline cannot address is why a specific behaviour keeps recurring in a specific context — what originated it, and why awareness of the pattern does not interrupt it.
+  </p>
+
+  <p>
+    Psychodynamic psychology offers a more precise frame. Behavioural patterns form around early relational experiences and consolidate into what object relations theory calls internal working models — automatic, pre-conscious templates for how we expect situations and relationships to unfold. Under pressure, these templates activate faster than conscious decision-making.
+  </p>
+
+  <p>
+    A trader who consistently revenge trades after a loss is usually not "undisciplined." They are running a pattern whose source sits outside the market entirely — one that discipline-based intervention was never designed to reach.
+  </p>
+
+  <p>
+    Carl Rogers' client-centred framework adds a second dimension. Lasting behavioural change requires congruence: alignment between a person's self-concept and their lived experience. When a trader's self-concept includes "I am disciplined" but their behaviour contradicts this repeatedly, the dissonance itself becomes a pressure that amplifies the pattern rather than interrupting it. More discipline advice does not close that gap. It widens it.
+  </p>
+
+  <h2>The gap between knowing and doing</h2>
+
+  <p>
+    The 93% failure figure is widely cited in prop trading communities. What is rarely asked is a more uncomfortable question: how many of those traders knew, intellectually, exactly what they were doing wrong?
+  </p>
+
+  <p>
+    Almost all of them.
+  </p>
+
+  <p>
+    The gap between knowing and doing is not a willpower gap. It is not a knowledge gap. It is a pattern gap — and patterns have sources that discipline-level intervention cannot reach, because the sources formed before the discipline was ever applied.
+  </p>
+
+  <p>
+    Identifying the source of the pattern is a different kind of work. It requires examining where a specific behavioural response originated, what relational context it made sense in, and why the nervous system is still running it as if that context is the current one.
+  </p>
+
+  <p>
+    That work does not happen through journaling. It happens in conversation, with someone trained to see what the trader cannot see about themselves — which is the only reason it requires another person at all.
+  </p>
+
+  <!-- Author bio -->
+  <div class="author-bio">
+    <img src="/assets/aayush.jpg" alt="Aayush Namdev" />
+    <div>
+      <div class="bio-name">Aayush Namdev</div>
+      <div class="bio-title">Co-founder, TradeRoot · Funded prop trader · MA Psychology candidate</div>
+      <p class="bio-text">
+        Funded prop trader at Apex Trader Funding ($100K) and Alpha Capital Group ($100K).
+        MA Psychology candidate at Chandigarh University, with clinical training under
+        Dr. Nitin Sethi and at Japneet Bakhshi Clinic. Co-founded TradeRoot with Khushi Narwal
+        to work at the source of behavioral trading patterns rather than their symptoms.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<!-- CTA -->
+<section class="article-cta">
+  <h3>Recognise the pattern. Find its source.</h3>
+  <p>A free 10-minute call with Khushi. No pitch. A conversation to see if this work is the right fit.</p>
+  <a class="btn-amber" href="https://cal.com/traderoot/free-10-min-call">Book a free call</a>
+</section>
+
+<footer>
+  <p>© 2026 TradeRoot · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · hello@traderoot.space</p>
+  <p style="margin-top:0.4rem;">Performance coaching, not therapy. We do not diagnose or treat clinical conditions.</p>
+</footer>
+
+</body>
+</html>
