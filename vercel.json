@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.traderoot.space" }],
+      "destination": "https://traderoot.space/$1",
+      "permanent": true
+    }
+  ]
+}
