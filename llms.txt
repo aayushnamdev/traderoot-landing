@@ -36,3 +36,10 @@ Behavioral loops in trading have origin points that are almost never about tradi
 - https://traderoot.space — Main landing page (method, founders, pricing, FAQ)
 - https://traderoot.space/privacy.html — Privacy policy
 - https://traderoot.space/terms.html — Terms of service
+
+## Articles
+
+- https://traderoot.space/articles/why-prop-traders-fail.html — Why 93% of prop firm traders never receive a payout; the failure mode is almost never technical, it is behavioral
+- https://traderoot.space/articles/prop-firm-challenge-discipline.html — How the structure of every prop firm challenge (the simulated number, the target math, the loop cadence) pushes disciplined traders toward reckless sizing
+- https://traderoot.space/articles/trading-frequency-problem.html — Why trading is not a discipline problem but a frequency problem; the nervous system gets calibrated to a signal nothing else matches, and rule breaking carries its own reward
+- https://traderoot.space/articles/the-loneliness-of-trading.html — The social cost of trading: withholding your edge from close friends, the timeline mismatch with family, and why payout is the only language that translates

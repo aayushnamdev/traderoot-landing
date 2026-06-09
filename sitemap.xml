@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://traderoot.space/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -21,6 +21,24 @@
   <url>
     <loc>https://traderoot.space/articles/why-prop-traders-fail.html</loc>
     <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://traderoot.space/articles/prop-firm-challenge-discipline.html</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://traderoot.space/articles/trading-frequency-problem.html</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://traderoot.space/articles/the-loneliness-of-trading.html</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
