@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>TradeRoot — Performance coaching for traders</title>
+<title>TradeRoot: Performance coaching for traders</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 <meta name="description" content="Performance coaching for prop firm and futures traders. Clinical psychology methods to identify and interrupt the behavioral patterns preventing consistent execution. Book a free 10-minute call." />
 <link rel="canonical" href="https://traderoot.space/" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://traderoot.space/" />
-<meta property="og:title" content="TradeRoot — Performance coaching for traders" />
+<meta property="og:title" content="TradeRoot: Performance coaching for traders" />
 <meta property="og:description" content="Your trading strategy isn't broken. Your operating system is. Clinical psychology methods for traders who keep failing despite technical skill." />
 <meta property="og:image" content="https://traderoot.space/assets/og-image.png" />
 <meta property="og:image:width" content="1200" />
@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="TradeRoot" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@TraderootHQ" />
-<meta name="twitter:title" content="TradeRoot — Performance coaching for traders" />
+<meta name="twitter:title" content="TradeRoot: Performance coaching for traders" />
 <meta name="twitter:description" content="Your trading strategy isn't broken. Your operating system is." />
 <meta name="twitter:image" content="https://traderoot.space/assets/og-image.png" />
 <script type="application/ld+json">
@@ -26,7 +26,7 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "TradeRoot",
-    "url": "https://traderoot.space",
+    "url": "https://traderoot.space/",
     "description": "Performance coaching for prop firm and futures traders. Clinical psychology methods to identify and interrupt the behavioral patterns preventing consistent execution.",
     "potentialAction": {
       "@type": "SearchAction",
@@ -38,7 +38,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "TradeRoot",
-    "url": "https://traderoot.space",
+    "url": "https://traderoot.space/",
     "logo": "https://traderoot.space/assets/traderoot-logo.svg",
     "description": "Performance coaching for prop firm and futures traders. We use clinical psychology methods to identify and interrupt the behavioral patterns that prevent skilled traders from executing consistently.",
     "email": "hello@traderoot.space",
@@ -77,7 +77,7 @@
       "@type": "Organization",
       "name": "TradeRoot"
     },
-    "url": "https://traderoot.space",
+    "url": "https://traderoot.space/",
     "description": "One-on-one performance coaching sessions for prop firm and futures traders struggling with behavioral patterns: revenge trading, moving stop losses, cutting winners early, failing evaluations despite technical skill. Sessions are 60 minutes, video call, with both founders present.",
     "serviceType": "Performance Coaching",
     "audience": {
@@ -266,6 +266,7 @@
   }
 ]
 </script>
+<noscript><style>.reveal,.reveal-load{opacity:1;transform:none;}</style></noscript>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=DM+Sans:opsz,wght@9..40,300..600&display=swap">
@@ -278,7 +279,8 @@
     --amber:#C8974A;
     --amber-deep:#B8872A;
     --charcoal:#2D2D2B;
-    --muted:#7a7a74;
+    --muted:#636360;
+    --ease-out:cubic-bezier(0.23,1,0.32,1);
     --muted-light:rgba(247,245,240,.62);
     --f-head:"Fraunces","Times New Roman",serif;
     --f-body:"DM Sans",system-ui,sans-serif;
@@ -374,11 +376,11 @@
     font-family:var(--f-body);font-size:15px;font-weight:500;
     letter-spacing:.005em;
     text-decoration:none;
-    transition:background .2s ease,transform .2s ease,box-shadow .2s ease;
-    will-change:transform;
+    transition:background .2s ease,transform .2s var(--ease-out),box-shadow .2s ease;
   }
   .btn:hover{background:var(--amber-deep);transform:translateY(-1px) scale(1.015);box-shadow:0 10px 24px rgba(200,151,74,.28);}
-  .btn .arrow{transition:transform .2s ease;}
+  .btn:active{transform:scale(0.97);transition-duration:100ms;}
+  .btn .arrow{transition:transform .2s var(--ease-out);}
   .btn:hover .arrow{transform:translateX(3px);}
   .btn-sm{padding:11px 18px;font-size:14px;border-radius:3px;}
   .btn-ghost{
@@ -394,9 +396,10 @@
     border:1px solid var(--charcoal);color:var(--charcoal);background:none;
     padding:13px 18px;border-radius:3px;font-size:14px;text-decoration:none;display:inline-flex;
     font-family:var(--f-body);font-weight:500;
-    transition:background .2s,color .2s;
+    transition:background .2s,color .2s,transform .15s var(--ease-out);
   }
   .btn-outline:hover{background:var(--charcoal);color:var(--warm-white);}
+  .btn-outline:active{transform:scale(0.97);}
   .cta-pair{display:flex;flex-wrap:wrap;align-items:center;gap:20px;}
 
   /* ========== HERO ========== */
@@ -421,13 +424,13 @@
   .hero .label{color:rgba(247,245,240,.58);}
   .hero-art{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;}
   .hero-art img{width:100%;max-width:260px;opacity:.55;filter:brightness(10) sepia(0.3);mix-blend-mode:screen;}
-  .hero-art-caption{font-family:var(--f-head);font-style:italic;font-size:13px;color:rgba(247,245,240,.38);letter-spacing:.06em;text-align:center;}
+  .hero-art-caption{font-family:var(--f-head);font-style:italic;font-size:13px;color:rgba(247,245,240,.5);letter-spacing:.06em;text-align:center;}
 
   /* fade-in on load */
-  .reveal-load{opacity:0;transform:translateY(14px);transition:opacity .9s ease,transform .9s ease;}
+  .reveal-load{opacity:0;transform:translateY(14px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out);}
   .reveal-load.in{opacity:1;transform:translateY(0);}
   /* scroll reveal */
-  .reveal{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease;}
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out);}
   .reveal.in{opacity:1;transform:translateY(0);}
 
   /* ========== MIRROR ========== */
@@ -671,9 +674,9 @@
   .faq-q .plus:before{width:13px;height:1.5px;}
   .faq-q .plus:after{width:1.5px;height:13px;transition:transform .3s ease;}
   .faq-item.open .faq-q .plus:after{transform:scaleY(0);}
-  .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;}
-  .faq-a-inner{padding:0 0 26px 0;max-width:720px;font-size:15.5px;line-height:1.75;color:var(--charcoal);}
-  .faq-item.open .faq-a{max-height:none;}
+  .faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s var(--ease-out);}
+  .faq-a-inner{overflow:hidden;padding:0 0 26px 0;max-width:720px;font-size:15.5px;line-height:1.75;color:var(--charcoal);}
+  .faq-item.open .faq-a{grid-template-rows:1fr;}
 
   /* ========== FINAL CTA ========== */
   .final{
@@ -700,7 +703,7 @@
   @media(max-width:720px){.footer-top{grid-template-columns:1fr;gap:22px;}}
   .footer-brand .bname{font-family:var(--f-head);color:var(--warm-white);font-size:20px;display:block;margin-bottom:6px;}
   .footer-brand .tag{font-family:var(--f-head);font-style:italic;font-size:14px;}
-  .footer-brand .copy{margin-top:10px;font-size:12px;color:rgba(247,245,240,.35);}
+  .footer-brand .copy{margin-top:10px;font-size:12px;color:rgba(247,245,240,.5);}
   .footer-col h5{font-family:var(--f-body);font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,245,240,.38);margin:0 0 14px;}
   .footer-col a{display:block;color:inherit;text-decoration:none;margin-bottom:10px;transition:color .2s;}
   .footer-col a:hover{color:var(--warm-white);}
@@ -715,7 +718,7 @@
   .footer-bottom{
     max-width:var(--maxw);margin:36px auto 0;padding-top:22px;
     border-top:1px solid rgba(247,245,240,.1);
-    font-size:11.5px;color:rgba(247,245,240,.38);line-height:1.75;
+    font-size:12px;color:rgba(247,245,240,.5);line-height:1.75;
   }
 
   /* ========== STICKY MOBILE CTA ========== */
@@ -738,6 +741,58 @@
     body{font-size:16px;line-height:1.75;}
     .faq-a-inner{font-size:15px;line-height:1.75;}
   }
+
+  /* ========== FOCUS VISIBLE ========== */
+  :focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:2px;}
+  .final :focus-visible,.hero :focus-visible{outline-color:var(--amber);}
+
+  /* ========== HOVER GATE: reset on touch devices ========== */
+  @media(hover:none){
+    .btn:hover{transform:none;box-shadow:none;background:var(--amber);}
+    .btn:active{transform:scale(0.97);}
+    .btn-outline:hover{background:none;color:var(--charcoal);}
+    .price-card:hover{transform:none;box-shadow:0 1px 0 rgba(45,45,43,.04),0 10px 30px rgba(28,58,46,.06);}
+    .faq-q:hover{color:var(--charcoal);}
+    .nav-links a:hover{opacity:.82;}
+    .btn-ghost:hover{opacity:.72;}
+    .footer-col a:hover{color:inherit;}
+    .footer-social a:hover{border-color:rgba(247,245,240,.16);color:rgba(247,245,240,.7);}
+    .article-card:hover{transform:none;box-shadow:0 1px 0 rgba(45,45,43,.04),0 8px 30px rgba(28,58,46,.04);}
+  }
+
+  /* ========== REDUCED MOTION ========== */
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .reveal,.reveal-load{transition:opacity .2s ease;transform:none!important;}
+    .reveal.in,.reveal-load.in{transform:none;}
+    .btn{transition:background .2s ease,box-shadow .2s ease;}
+    .btn:active{transform:none;}
+    .btn-outline{transition:background .2s ease,color .2s ease;}
+    .btn-outline:active{transform:none;}
+    .price-card{transition:none;}
+    .faq-a{transition:none;}
+    .sticky-cta{transition:none;}
+    .nav{transition:background .2s ease,box-shadow .2s ease;}
+    .article-card{transition:none;}
+  }
+
+  /* ========== ARTICLE CARD ========== */
+  .article-section{background:var(--stone);padding:clamp(40px,6vh,80px) var(--gutter);}
+  .article-section .wrap{max-width:860px;}
+  .from-label{color:var(--root-green);opacity:.55;display:block;margin-bottom:16px;}
+  .article-card{
+    display:block;background:var(--warm-white);
+    border-radius:4px;padding:34px 32px;
+    text-decoration:none;color:inherit;
+    border:1px solid rgba(28,58,46,.08);
+    box-shadow:0 1px 0 rgba(45,45,43,.04),0 8px 30px rgba(28,58,46,.04);
+    transition:box-shadow .2s var(--ease-out),transform .2s var(--ease-out);
+  }
+  .article-card:hover{box-shadow:0 4px 24px rgba(28,58,46,.12);transform:translateY(-2px);}
+  .article-card .label{color:var(--amber);display:block;margin-bottom:12px;}
+  .article-card h3{font-size:clamp(19px,2.2vw,24px);color:var(--root-green);margin-bottom:12px;}
+  .article-card > p{font-size:15px;color:var(--charcoal);line-height:1.65;max-width:620px;margin-bottom:16px;}
+  .article-read-more{font-size:14px;font-weight:500;color:var(--root-green);font-family:var(--f-body);}
 </style>
 </head>
 <body>
@@ -749,14 +804,14 @@
     <a href="#method">The Method</a>
     <a href="#pricing">Pricing</a>
   </div>
-  <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn btn-sm nav-cta">Book a Session</a>
+  <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn btn-sm nav-cta">Book a free call</a>
   <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span></button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <a href="#method">The Method</a>
   <a href="#pricing">Pricing</a>
-  <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener">Book a Session</a>
-  <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener">Book a 10-min call</a>
+  <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener">Book a free call</a>
+  <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener">Book a session</a>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -776,12 +831,11 @@
 
   <div class="hero-inner wrap">
     <div class="hero-copy">
-      <span class="label reveal-load">Performance Coaching for Traders</span>
       <h1 class="reveal-load" style="transition-delay:.05s">Your trading strategy isn't broken. Your operating system is.</h1>
       <p class="sub reveal-load" style="transition-delay:.18s">Performance coaching for prop firm and futures traders who know their edge. Both of us, every session.</p>
       <div class="cta-row cta-pair reveal-load" style="transition-delay:.30s">
-        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn">Book a session <span class="arrow">→</span></a>
-        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn-ghost">Or book a 10-minute call</a>
+        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn">Book a free 10-minute call <span class="arrow">→</span></a>
+        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn-ghost">Or book a paid session</a>
       </div>
       <p class="micro reveal-load" style="transition-delay:.40s">60 minutes, video call, one-on-one. No pitch. No course. Just the work.</p>
     </div>
@@ -809,7 +863,7 @@
 
     <div class="statbar">
       <div class="statbar-inner">
-        <strong style="font-weight:600">93% of prop firm traders fail.</strong> The average trader spends $4,270 on evaluation fees before quitting. <span class="src">— FPFX Tech, 300,000+ accounts</span>
+        <strong style="font-weight:600">93% of prop firm traders fail.</strong> The average trader spends $4,270 on evaluation fees before quitting. <span class="src">Source: FPFX Tech, 300,000+ accounts</span>
       </div>
     </div>
   </div>
@@ -835,7 +889,6 @@
 <!-- ============ THE WORK ============ -->
 <section class="section method reveal" id="method">
   <div class="wrap">
-    <span class="label" style="color:var(--amber)">The Work</span>
     <h2>What happens in a session.</h2>
     <p class="subnote">Both of us are there. Every session, not just the first one. One of you, two of us. That's the shape.</p>
 
@@ -862,8 +915,8 @@
     <div class="method-foot">
       <p class="note">No homework. No treatment plan. Within twenty-four hours of the session, a short note from us about what we noticed and what stayed with us.</p>
       <div class="cta-pair">
-        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn">Book a session <span class="arrow">→</span></a>
-        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Or book a 10-minute call</a>
+        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn">Book a free 10-minute call <span class="arrow">→</span></a>
+        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Or book a paid session</a>
       </div>
     </div>
   </div>
@@ -896,9 +949,9 @@
           <p class="bio">I know what the "Challenge Failed" email feels like at 11 PM. I've been through the exact loop this work addresses. I'm not done with this work. I'm in a different relationship with it now.</p>
           <p class="bio">I trade proprietary capital. I'm also completing an MA in Psychology. The work we do at TradeRoot sits exactly where those two lives meet, because that's where I had to do it on myself first.</p>
           <div class="credentials">
-            <strong>MA Psychology</strong> — Chandigarh University<br/>
-            Funded prop trader — Apex Trader Funding ($100K) and Alpha Capital Group ($100K, 13% profit target passed)<br/>
-            Clinical training: Dr. Nitin Sethi (Consultant Psychiatrist) — case observation; Japneet Bakhshi Clinic — assessments, ICD-11 diagnostic formulation, psychotherapeutic technique.
+            <strong>MA Psychology,</strong> Chandigarh University<br/>
+            Funded prop trader: Apex Trader Funding ($100K) and Alpha Capital Group ($100K, 13% profit target passed)<br/>
+            Clinical training: Dr. Nitin Sethi (Consultant Psychiatrist), case observation; Japneet Bakhshi Clinic, ICD-11 diagnostic formulation, psychotherapeutic technique.
           </div>
           <p class="quote">I'm not here to teach you how to trade. I'm here to figure out why you can't execute what you already know.</p>
         </div>
@@ -911,9 +964,9 @@
           <p class="bio">I recognized something in what traders describe. The behavioral loops, the patterns repeating despite full awareness of what's happening. These aren't character flaws. They have names, origins, and exit points. That's what the clinical side of this work addresses.</p>
           <p class="bio">I trained in mathematics before psychology. The analytical lens didn't go away when I changed fields. It shapes how I work with patterns now.</p>
           <div class="credentials">
-            <strong>MA Psychology</strong> — Chandigarh University<br/>
-            <strong>BSc Mathematics</strong> — Delhi University<br/>
-            Clinical training: private psychology practice — assessments, therapeutic session work, behavioural interventions with case documentation and outcome tracking.<br/>
+            <strong>MA Psychology,</strong> Chandigarh University<br/>
+            <strong>BSc Mathematics,</strong> Delhi University<br/>
+            Clinical training: private psychology practice. Assessments, therapeutic session work, behavioural interventions with case documentation and outcome tracking.<br/>
             Areas of focus: counselling psychology, behavioural interventions, trading psychology.
           </div>
           <p class="quote" style="margin-top:22px">The gap between knowing and doing isn't a willpower problem. It's a pattern problem.</p>
@@ -941,7 +994,7 @@
         <p>Neo-Freudian thinkers extended psychoanalytic work into the territory of how we form our sense of self in relation to others, and how those relational patterns repeat across contexts. A trader's behavior in the market is not separate from who they are. It's an expression of it.</p>
       </div>
       <div class="proof-col">
-        <span class="label">Rogers — Client-Centered Therapy</span>
+        <span class="label">Rogers: Client-Centered Therapy</span>
         <p>Carl Rogers identified three conditions that make change possible: empathy, unconditional positive regard, and congruence. These aren't techniques we apply. They're the conditions we try to create in every session. The method is clinical. The experience is human.</p>
       </div>
       <div class="proof-col">
@@ -957,8 +1010,8 @@
 
     <div class="founding-cta">
       <div class="cta-pair">
-        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn">Book at $47 <span class="arrow">→</span></a>
-        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Or book a 10-minute call</a>
+        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn">Book a free 10-minute call <span class="arrow">→</span></a>
+        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Or book a session at $47</a>
       </div>
     </div>
   </div>
@@ -967,12 +1020,11 @@
 <!-- ============ PRICING ============ -->
 <section class="section pricing reveal" id="pricing">
   <div class="wrap">
-    <span class="label">Transparent Pricing</span>
     <h2>One thing. Priced clearly.</h2>
     <p style="color:var(--muted);font-size:15px;margin-top:12px">No hidden fees. No upsell traps. No "apply for pricing."</p>
     <div class="spots-bar">
       <span class="dot"></span>
-      <span>8 of 15 early access spots remaining at $47</span>
+      <span>Early-access pricing while the first cohort fills</span>
     </div>
 
     <div class="pricing-grid">
@@ -982,7 +1034,7 @@
         <h3>One Session</h3>
         <p class="format">60 min. Video call. Both founders.</p>
         <p class="price">$47</p>
-        <p class="payment">First 15 clients only. Then $97.</p>
+        <p class="payment">Early access. Then $97.</p>
         <div class="divider"></div>
         <ul>
           <li>Both founders present, every session</li>
@@ -1010,10 +1062,10 @@
     </div>
 
     <div class="pricing-foot">
-      <p>Not sure where to start? Start with one session. We'll tell you honestly if the work is right for you. And if it isn't, we'll say so.</p>
+      <p>Not sure where to start? Start with the free call. We'll tell you honestly if the work is right for you. And if it isn't, we'll say so.</p>
       <div class="cta-pair">
-        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn">Book a session <span class="arrow">→</span></a>
-        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Or book a 10-minute call</a>
+        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn">Book a free 10-minute call <span class="arrow">→</span></a>
+        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Or book a paid session</a>
       </div>
     </div>
   </div>
@@ -1058,14 +1110,14 @@
 </section>
 
 <!-- ============ FROM THE FOUNDERS ============ -->
-<section class="section reveal" style="background:var(--stone);padding-top:clamp(40px,6vh,80px);padding-bottom:clamp(40px,6vh,80px);">
-  <div style="max-width:860px;margin:0 auto;">
-    <p style="font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--root-green);opacity:.55;margin-bottom:1.2rem;">From the founders</p>
-    <a href="articles/why-prop-traders-fail.html" style="display:block;background:var(--warm-white);border-radius:10px;padding:2rem 2.2rem;text-decoration:none;color:inherit;border:1px solid rgba(28,58,46,.08);transition:box-shadow .2s;" onmouseover="this.style.boxShadow='0 4px 24px rgba(28,58,46,.10)'" onmouseout="this.style.boxShadow='none'">
-      <p style="font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:.6rem;">Trading Psychology</p>
-      <h3 style="font-family:'Fraunces',serif;font-size:clamp(1.1rem,2.2vw,1.45rem);font-weight:600;color:var(--root-green);line-height:1.3;margin-bottom:.75rem;">Why 93% of Prop Firm Traders Never Get Paid, and Why It Is Rarely About Strategy</h3>
-      <p style="font-size:.95rem;color:#5a5a57;line-height:1.65;max-width:620px;margin-bottom:1.1rem;">FPFX Technology analyzed more than 300,000 accounts and found only 7% of traders ever receive a payout. The failure mode is almost never technical.</p>
-      <span style="font-size:.85rem;font-weight:500;color:var(--root-green);">Read the article &rarr;</span>
+<section class="article-section reveal">
+  <div class="wrap">
+    <span class="label from-label">From the founders</span>
+    <a href="articles/why-prop-traders-fail.html" class="article-card">
+      <span class="label">Trading Psychology</span>
+      <h3>Why 93% of Prop Firm Traders Never Get Paid, and Why It Is Rarely About Strategy</h3>
+      <p>FPFX Technology analyzed more than 300,000 accounts and found only 7% of traders ever receive a payout. The failure mode is almost never technical.</p>
+      <span class="article-read-more">Read the article &rarr;</span>
     </a>
   </div>
 </section>
@@ -1084,8 +1136,8 @@
     <h2>Stop running the same pattern you can't see.</h2>
     <p class="subt">You already know the trade. We find what's underneath it.</p>
     <div class="cta-pair">
-      <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn">Book a session <span class="arrow">→</span></a>
-      <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn-ghost">Or book a 10-minute call</a>
+      <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn">Book a free 10-minute call <span class="arrow">→</span></a>
+      <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn-ghost">Or book a paid session</a>
     </div>
     <p class="micro">$47 for the first 15 clients. 60 minutes. Both of us. The work starts in the first session.</p>
     <p class="tagline">Find the root. Fix the trade.</p>
@@ -1115,13 +1167,13 @@
     <div class="footer-col">
       <h5>Follow</h5>
       <div class="footer-social">
-        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)">
+        <a href="https://x.com/TraderootHQ" target="_blank" rel="noopener" aria-label="X (Twitter)">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.52 7.45L22 22h-6.84l-5.35-7-6.12 7H.94l6.98-7.97L.5 2h7l4.84 6.4L18.24 2zm-2.39 18h1.9L7.32 4H5.3l10.56 16z"/></svg>
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+        <a href="https://instagram.com/traderoot" target="_blank" rel="noopener" aria-label="Instagram">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/aayushnamdev/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-6a2 2 0 100 4 2 2 0 000-4z"/></svg>
         </a>
       </div>
@@ -1133,22 +1185,25 @@
 </footer>
 
 <!-- ============ STICKY MOBILE CTA ============ -->
-<a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="sticky-cta" id="stickyCta">Book a session →</a>
+<a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="sticky-cta" id="stickyCta">Book a free call →</a>
 
 <script>
-/* ==== NAV SCROLL ==== */
+/* ==== NAV + STICKY CTA (IntersectionObserver — no scroll listener) ==== */
 const nav = document.getElementById('nav');
 const sticky = document.getElementById('stickyCta');
+const heroEl = document.querySelector('.hero');
 const pricingEl = document.getElementById('pricing');
-function onScroll(){
-  const y = window.scrollY;
-  nav.classList.toggle('scrolled', y > 80);
-  const heroH = document.querySelector('.hero').offsetHeight;
-  const pricingTop = pricingEl.getBoundingClientRect().top + window.scrollY - 60;
-  sticky.classList.toggle('show', y > heroH * 0.85 && y < pricingTop);
-}
-window.addEventListener('scroll', onScroll, {passive:true});
-onScroll();
+/* nav sentinel: 1px div at y=80 inside the hero */
+const _ns = document.createElement('div');
+_ns.setAttribute('aria-hidden','true');
+_ns.style.cssText='position:absolute;top:80px;left:0;width:1px;height:1px;pointer-events:none;';
+heroEl.appendChild(_ns);
+new IntersectionObserver(([e])=>nav.classList.toggle('scrolled',!e.isIntersecting)).observe(_ns);
+/* sticky CTA: appear after hero exits viewport, disappear when pricing enters */
+let _postHero=false,_prePricing=true;
+const _sync=()=>sticky.classList.toggle('show',_postHero&&_prePricing);
+new IntersectionObserver(([e])=>{_postHero=!e.isIntersecting;_sync();},{threshold:0}).observe(heroEl);
+new IntersectionObserver(([e])=>{_prePricing=!e.isIntersecting;_sync();},{threshold:0,rootMargin:'-60px 0px 0px 0px'}).observe(pricingEl);
 
 /* ==== HAMBURGER ==== */
 const hamburger = document.getElementById('hamburger');
