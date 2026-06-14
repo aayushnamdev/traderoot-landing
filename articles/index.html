@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Articles — TradeRoot</title>
+  <meta name="description" content="Writing from the founders of TradeRoot on why skilled prop firm and futures traders can't execute: the knowing-doing gap and the pattern beneath the pattern." />
+  <link rel="canonical" href="https://traderoot.space/articles/index.html" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://traderoot.space/articles/index.html" />
+  <meta property="og:title" content="Articles — TradeRoot" />
+  <meta property="og:description" content="Writing on the psychology of why skilled prop firm and futures traders can't execute, from the founders of TradeRoot." />
+  <meta property="og:image" content="https://traderoot.space/assets/og-image.png" />
+  <meta property="og:site_name" content="TradeRoot" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@TraderootHQ" />
+  <meta name="twitter:title" content="Articles — TradeRoot" />
+  <meta name="twitter:description" content="Writing on the psychology of why skilled prop firm and futures traders can't execute, from the founders of TradeRoot." />
+  <meta name="twitter:image" content="https://traderoot.space/assets/og-image.png" />
+
+  <!-- CollectionPage + ItemList + BreadcrumbList schema -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Articles — TradeRoot",
+      "description": "Writing on the psychology of why skilled prop firm and futures traders can't execute. The knowing-doing gap, the fight with the market, the pattern beneath the pattern, from the founders of TradeRoot.",
+      "url": "https://traderoot.space/articles/index.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "TradeRoot",
+        "url": "https://traderoot.space",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://traderoot.space/assets/traderoot-logo.svg"
+        },
+        "sameAs": [
+          "https://x.com/TraderootHQ",
+          "https://www.instagram.com/traderoot_/",
+          "https://www.linkedin.com/company/traderoothq/"
+        ]
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Why You Fight the Market After a Loss (And Why It Always Wins)",
+            "url": "https://traderoot.space/articles/why-you-fight-the-market.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Why 93% of Prop Firm Traders Never Get Paid, and Why It Is Rarely About Strategy",
+            "url": "https://traderoot.space/articles/why-prop-traders-fail.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Why Prop Firm Challenges Make Disciplined Traders Reckless",
+            "url": "https://traderoot.space/articles/prop-firm-challenge-discipline.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Trading Is Not a Discipline Problem. It Is a Frequency Problem.",
+            "url": "https://traderoot.space/articles/trading-frequency-problem.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "The Loneliness of Trading: Why Traders Stop Talking About It",
+            "url": "https://traderoot.space/articles/the-loneliness-of-trading.html"
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://traderoot.space/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Articles",
+          "item": "https://traderoot.space/articles/index.html"
+        }
+      ]
+    }
+  ]
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --root-green:  #1C3A2E;
+      --warm-white:  #F7F5F0;
+      --stone:       #E8E4DC;
+      --amber:       #C8974A;
+      --charcoal:    #2D2D2B;
+      --muted:       #6B6B68;
+      --teal:        #5dcaa5;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--warm-white);
+      color: var(--charcoal);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    /* ── Nav ── */
+    nav {
+      background: var(--root-green);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    nav a.home {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--warm-white);
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    nav a.home img { height: 28px; width: auto; }
+    nav a.cta {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--amber);
+      text-decoration: none;
+      border: 1px solid rgba(200,151,74,0.4);
+      padding: 6px 16px;
+      border-radius: 4px;
+      transition: border-color 0.2s;
+    }
+    nav a.cta:hover { border-color: var(--amber); }
+
+    /* ── Page hero ── */
+    .page-hero {
+      background: var(--root-green);
+      color: var(--warm-white);
+      padding: 4rem 2rem 3.5rem;
+      text-align: center;
+    }
+    .page-hero .label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1.2rem;
+    }
+    .page-hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      max-width: 680px;
+      margin: 0 auto 1.2rem;
+    }
+    .page-hero .deck {
+      font-size: 1.05rem;
+      color: rgba(247,245,240,0.72);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    /* ── Article grid ── */
+    .articles-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 1.5rem;
+      margin-top: 0;
+    }
+
+    .article-card {
+      display: block;
+      background: #fff;
+      border: 1px solid var(--stone);
+      border-radius: 8px;
+      padding: 1.8rem 2rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .article-card:hover {
+      border-color: var(--root-green);
+      box-shadow: 0 4px 20px rgba(28,58,46,0.09);
+    }
+    .article-card .label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.75rem;
+    }
+    .article-card h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--root-green);
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+    }
+    .article-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 1.2rem;
+    }
+    .article-read-more {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--root-green);
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+    }
+    footer a { color: rgba(255,255,255,0.4); }
+
+    @media (max-width: 600px) {
+      .article-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCLFB39CV2"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HCLFB39CV2');</script>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <a class="home" href="https://traderoot.space">
+    <img src="../assets/favicon.svg" alt="TradeRoot" />
+    TradeRoot
+  </a>
+  <a class="cta" href="https://cal.com/traderoot/free-10-min-call">Free 10-min call</a>
+</nav>
+
+<!-- Hero -->
+<header class="page-hero">
+  <span class="label">From the founders</span>
+  <h1>Articles on Trading Psychology</h1>
+  <p class="deck">Writing on the knowing-doing gap: why skilled traders self-sabotage, what is actually happening underneath, and what root-cause work looks like instead.</p>
+</header>
+
+<!-- Article grid -->
+<main class="articles-section">
+  <div class="article-grid">
+
+    <a href="why-you-fight-the-market.html" class="article-card">
+      <span class="label">Trading Psychology</span>
+      <h2>Why You Fight the Market After a Loss (And Why It Always Wins)</h2>
+      <p>You passed the challenge. Then two trades go against you and the chart becomes an enemy. Here is the mechanism nobody explains, and why discipline never fixed it.</p>
+      <span class="article-read-more">Read the article &rarr;</span>
+    </a>
+
+    <a href="why-prop-traders-fail.html" class="article-card">
+      <span class="label">Trading Psychology</span>
+      <h2>Why 93% of Prop Firm Traders Never Get Paid, and Why It Is Rarely About Strategy</h2>
+      <p>FPFX Technology analyzed more than 300,000 accounts and found only 7% of traders ever receive a payout. The failure mode is almost never technical.</p>
+      <span class="article-read-more">Read the article &rarr;</span>
+    </a>
+
+    <a href="prop-firm-challenge-discipline.html" class="article-card">
+      <span class="label">Trading Psychology</span>
+      <h2>Why Prop Firm Challenges Make Disciplined Traders Reckless</h2>
+      <p>Three forces built into the structure of every challenge push careful traders toward reckless sizing. Not despite the rules. Because of them.</p>
+      <span class="article-read-more">Read the article &rarr;</span>
+    </a>
+
+    <a href="trading-frequency-problem.html" class="article-card">
+      <span class="label">Trading Psychology</span>
+      <h2>Trading Is Not a Discipline Problem. It Is a Frequency Problem.</h2>
+      <p>The market has out-competed every other source of meaning in your life. The nervous system gets tuned to a signal nothing else broadcasts on. Here is what that actually means.</p>
+      <span class="article-read-more">Read the article &rarr;</span>
+    </a>
+
+    <a href="the-loneliness-of-trading.html" class="article-card">
+      <span class="label">Trading Psychology</span>
+      <h2>The Loneliness of Trading: Why Traders Stop Talking About It</h2>
+      <p>Withholding your edge from close friends, the clock your family starts without telling you, and why only a payout translates. The social cost nobody warns you about.</p>
+      <span class="article-read-more">Read the article &rarr;</span>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 TradeRoot · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · hello@traderoot.space</p>
+  <div style="display:flex;gap:10px;margin-top:8px;justify-content:center;">
+    <a href="https://x.com/TraderootHQ" target="_blank" rel="noopener" aria-label="X (Twitter)" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:1px solid rgba(255,255,255,.18);border-radius:6px;color:inherit;opacity:.7;">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2H21l-6.52 7.45L22 22h-6.84l-5.35-7-6.12 7H.94l6.98-7.97L.5 2h7l4.84 6.4L18.24 2zm-2.39 18h1.9L7.32 4H5.3l10.56 16z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/traderoot_/" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:1px solid rgba(255,255,255,.18);border-radius:6px;color:inherit;opacity:.7;">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/company/traderoothq/" target="_blank" rel="noopener" aria-label="LinkedIn" style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:1px solid rgba(255,255,255,.18);border-radius:6px;color:inherit;opacity:.7;">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zm2-6a2 2 0 100 4 2 2 0 000-4z"/></svg>
+    </a>
+  </div>
+  <p style="margin-top:0.4rem;">Performance coaching, not therapy. We do not diagnose or treat clinical conditions.</p>
+</footer>
+
+</body>
+</html>
