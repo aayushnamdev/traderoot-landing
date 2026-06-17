@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>TradeRoot: Performance coaching for traders</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-<meta name="description" content="Performance coaching for prop firm and futures traders. Clinical psychology methods to identify and interrupt the behavioral patterns preventing consistent execution. Book a free 10-minute call." />
+<meta name="description" content="Performance coaching for prop firm and futures traders. Clinical psychology methods to identify and interrupt the behavioral patterns preventing consistent execution. FIFA season: first session for $5 — 90% off." />
 <link rel="canonical" href="https://traderoot.space/" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://traderoot.space/" />
@@ -82,34 +82,18 @@
     },
     "potentialAction": {
       "@type": "ReserveAction",
-      "target": "https://cal.com/traderoot/free-10-min-call",
-      "name": "Book free 10-minute call"
+      "target": "https://tally.so/r/MeGWBE",
+      "name": "Claim $5 FIFA-season session"
     },
     "offers": [
       {
         "@type": "Offer",
-        "name": "Single Session",
-        "price": "47",
+        "name": "Single Session — FIFA Season",
+        "price": "5",
         "priceCurrency": "USD",
-        "description": "60-minute one-on-one video session with both founders. Pattern recognition, origin tracing, and witnessed integration.",
+        "description": "60-minute one-on-one video session with both founders. Pattern recognition, origin tracing, and witnessed integration. FIFA season limited-time offer — 90% off regular $50 price.",
         "duration": "PT60M",
         "availability": "https://schema.org/LimitedAvailability"
-      },
-      {
-        "@type": "Offer",
-        "name": "Session Series",
-        "price": "340",
-        "priceCurrency": "USD",
-        "description": "Four sessions across six weeks. For traders who need more time to work through deep behavioral patterns.",
-        "duration": "PT60M"
-      },
-      {
-        "@type": "Offer",
-        "name": "Free 10-Minute Clarity Call",
-        "price": "0",
-        "priceCurrency": "USD",
-        "url": "https://cal.com/traderoot/free-10-min-call",
-        "description": "A free 10-minute call with Khushi. No pitch, no assessment. Just a conversation to see if this work is right for you."
       }
     ]
   },
@@ -194,7 +178,7 @@
         "name": "How do I book a session?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Start with a free 10-minute clarity call at https://cal.com/traderoot/free-10-min-call. It is not a sales call. It is a conversation to find out whether this work is the right fit for you. If it is, you can book a full session directly from there."
+          "text": "Fill in the intake form at https://tally.so/r/MeGWBE with your name, email, WhatsApp number, and what you trade. We'll message you on WhatsApp personally with your payment link — UPI for India, PayPal for everyone else."
         }
       },
       {
@@ -210,7 +194,7 @@
         "name": "What payment methods do you accept?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Currently payments are processed via PayPal. Stripe Checkout is being added. If you need an alternative arrangement, email hello@traderoot.space."
+          "text": "After you fill the intake form, we'll reach out on WhatsApp personally with a payment link — UPI for clients in India, PayPal for clients outside India."
         }
       },
       {
@@ -297,6 +281,7 @@
     font-weight:400;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
+    overflow-x:hidden;
   }
   img{max-width:100%;display:block}
   a{color:inherit}
@@ -736,6 +721,15 @@
   @media(max-width:780px){
     body{font-size:16px;line-height:1.75;}
     .faq-a-inner{font-size:15px;line-height:1.75;}
+    /* hide nav CTA so the hamburger always fits (CTA lives in the menu + sticky bar) */
+    .nav-cta{display:none;}
+    /* stack CTA pairs so long buttons never overflow the viewport */
+    .cta-pair{flex-direction:column;align-items:stretch;gap:12px;}
+    .cta-pair .btn{justify-content:center;}
+    .cta-pair .btn-ghost{justify-content:center;text-align:center;padding:10px 0;}
+    .final .cta-pair,.pricing-foot .cta-pair{align-items:stretch;}
+    /* keep long words from forcing horizontal scroll */
+    .hero .sub,.hero .micro{max-width:none;}
   }
 
   /* ========== FOCUS VISIBLE ========== */
@@ -803,14 +797,14 @@
     <a href="#method">The Method</a>
     <a href="#pricing">Pricing</a>
   </div>
-  <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn btn-sm nav-cta">Book a free call</a>
+  <a href="#" data-tally-open="MeGWBE" data-tally-layout="modal" data-tally-width="540" class="btn btn-sm nav-cta">Claim $5 FIFA spot →</a>
   <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span></button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <a href="#method">The Method</a>
   <a href="#pricing">Pricing</a>
-  <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener">Book a free call</a>
-  <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener">Book a session</a>
+  <a href="#" data-tally-open="MeGWBE" data-tally-layout="modal" data-tally-width="540">Claim your $5 FIFA spot →</a>
+  <a href="https://wa.me/919818071833?text=Hi!%20I%27m%20interested%20in%20the%20%245%20FIFA-season%20TradeRoot%20session." target="_blank" rel="noopener">Chat on WhatsApp</a>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -833,10 +827,10 @@
       <h1 class="reveal-load" style="transition-delay:.05s">Your trading strategy isn't broken. Your operating system is.</h1>
       <p class="sub reveal-load" style="transition-delay:.18s">Performance coaching for prop firm and futures traders who know their edge. Both of us, every session.</p>
       <div class="cta-row cta-pair reveal-load" style="transition-delay:.30s">
-        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn">Book a free 10-minute call <span class="arrow">→</span></a>
-        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn-ghost">Or book a paid session</a>
+        <a href="#" data-tally-open="MeGWBE" data-tally-layout="modal" data-tally-width="540" class="btn">Claim your $5 FIFA spot <span class="arrow">→</span></a>
+        <a href="https://wa.me/919818071833?text=Hi!%20I%27m%20interested%20in%20the%20%245%20FIFA-season%20TradeRoot%20session." target="_blank" rel="noopener" class="btn-ghost">Chat on WhatsApp</a>
       </div>
-      <p class="micro reveal-load" style="transition-delay:.40s">60 minutes, video call, one-on-one. No pitch. No course. Just the work.</p>
+      <p class="micro reveal-load" style="transition-delay:.40s">🏆 FIFA season — $5 (90% off $50). 60 minutes, video call, both of us. We'll message you on WhatsApp with your payment link.</p>
     </div>
 
     <div class="hero-art reveal-load" style="transition-delay:.28s">
@@ -914,8 +908,8 @@
     <div class="method-foot">
       <p class="note">No homework. No treatment plan. Within twenty-four hours of the session, a short note from us about what we noticed and what stayed with us.</p>
       <div class="cta-pair">
-        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn">Book a free 10-minute call <span class="arrow">→</span></a>
-        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Or book a paid session</a>
+        <a href="#" data-tally-open="MeGWBE" data-tally-layout="modal" data-tally-width="540" class="btn">Claim your $5 FIFA spot <span class="arrow">→</span></a>
+        <a href="https://wa.me/919818071833?text=Hi!%20I%27m%20interested%20in%20the%20%245%20FIFA-season%20TradeRoot%20session." target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Chat on WhatsApp</a>
       </div>
     </div>
   </div>
@@ -1003,14 +997,14 @@
     </div>
 
     <div class="founding-block">
-      <p>We're currently seeing our first clients at an early access price of <strong style="font-weight:500">$47 per session.</strong> Not a discount. A test. Once those spots fill, sessions move to $97 and stay there.</p>
+      <p>🏆 FIFA season offer — first session for <strong style="font-weight:500">$5</strong> (90% off the $50 price). Fill the form and we'll message you on WhatsApp with a payment link — UPI for India, PayPal for everyone else.</p>
       <p style="margin-bottom:0">If you're technically skilled but psychologically stuck, this is the moment to come in.</p>
     </div>
 
     <div class="founding-cta">
       <div class="cta-pair">
-        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn">Book a free 10-minute call <span class="arrow">→</span></a>
-        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Or book a session at $47</a>
+        <a href="#" data-tally-open="MeGWBE" data-tally-layout="modal" data-tally-width="540" class="btn">Claim your $5 FIFA spot <span class="arrow">→</span></a>
+        <a href="https://wa.me/919818071833?text=Hi!%20I%27m%20interested%20in%20the%20%245%20FIFA-season%20TradeRoot%20session." target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Chat on WhatsApp</a>
       </div>
     </div>
   </div>
@@ -1018,53 +1012,38 @@
 
 <!-- ============ PRICING ============ -->
 <section class="section pricing reveal" id="pricing">
-  <div class="wrap">
-    <h2>One thing. Priced clearly.</h2>
-    <p style="color:var(--muted);font-size:15px;margin-top:12px">No hidden fees. No upsell traps. No "apply for pricing."</p>
+  <div class="wrap" style="text-align:center;">
+    <h2>One session. One price. FIFA season only.</h2>
+    <p style="color:var(--muted);font-size:15px;margin-top:12px">No hidden fees. No upsell traps. Fill the form — we message you with a payment link.</p>
     <div class="spots-bar">
       <span class="dot"></span>
-      <span>Early-access pricing while the first cohort fills</span>
+      <span>90% off · FIFA season · limited spots</span>
     </div>
 
-    <div class="pricing-grid">
-      <div class="price-card featured">
-        <span class="badge">Early Access</span>
+    <div class="pricing-grid" style="grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto;">
+      <div class="price-card featured" style="text-align:left;">
+        <span class="badge">FIFA Season</span>
         <span class="tier-label">Single session</span>
         <h3>One Session</h3>
         <p class="format">60 min. Video call. Both founders.</p>
-        <p class="price">$47</p>
-        <p class="payment">Early access. Then $97.</p>
+        <p class="price"><span style="font-size:28px;text-decoration:line-through;opacity:.38;vertical-align:middle;margin-right:6px">$50</span>$5</p>
+        <p class="payment">90% off · FIFA season · limited time</p>
         <div class="divider"></div>
         <ul>
           <li>Both founders present, every session</li>
           <li>Pattern recognition, origin tracing, witnessed integration</li>
           <li>A short note from us within 24 hours</li>
+          <li>We reach out on WhatsApp with your payment link</li>
         </ul>
-        <div class="card-cta"><a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn">Book now →</a></div>
-      </div>
-
-      <div class="price-card">
-        <span class="tier-label">Four sessions</span>
-        <h3>A Series</h3>
-        <p class="format">Six weeks. Flexible schedule.</p>
-        <p class="price">$340</p>
-        <p class="payment">$85 per session</p>
-        <div class="divider"></div>
-        <ul>
-          <li>Both founders present, every session</li>
-          <li>You book each one when you're ready</li>
-          <li>No fixed cadence</li>
-          <li>Patterns take time to move. This gives them time.</li>
-        </ul>
-        <div class="card-cta"><a href="https://paypal.me/aayushAppealEdge/340" target="_blank" rel="noopener" class="btn-outline">Book the series →</a></div>
+        <div class="card-cta"><a href="#" data-tally-open="MeGWBE" data-tally-layout="modal" data-tally-width="540" class="btn">Claim your $5 spot →</a></div>
       </div>
     </div>
 
-    <div class="pricing-foot">
-      <p>Not sure where to start? Start with the free call. We'll tell you honestly if the work is right for you. And if it isn't, we'll say so.</p>
-      <div class="cta-pair">
-        <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn">Book a free 10-minute call <span class="arrow">→</span></a>
-        <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Or book a paid session</a>
+    <div class="pricing-foot" style="margin-left:auto;margin-right:auto;">
+      <p>Fill the form and we'll message you on WhatsApp personally — UPI link for India, PayPal link for everyone else.</p>
+      <div class="cta-pair" style="justify-content:center;">
+        <a href="#" data-tally-open="MeGWBE" data-tally-layout="modal" data-tally-width="540" class="btn">Claim your $5 spot <span class="arrow">→</span></a>
+        <a href="https://wa.me/919818071833?text=Hi!%20I%27m%20interested%20in%20the%20%245%20FIFA-season%20TradeRoot%20session." target="_blank" rel="noopener" class="btn-ghost-dark btn-ghost">Chat on WhatsApp</a>
       </div>
     </div>
   </div>
@@ -1159,10 +1138,10 @@
     <h2>Stop running the same pattern you can't see.</h2>
     <p class="subt">You already know the trade. We find what's underneath it.</p>
     <div class="cta-pair">
-      <a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="btn">Book a free 10-minute call <span class="arrow">→</span></a>
-      <a href="https://paypal.me/aayushAppealEdge/47" target="_blank" rel="noopener" class="btn-ghost">Or book a paid session</a>
+      <a href="#" data-tally-open="MeGWBE" data-tally-layout="modal" data-tally-width="540" class="btn">Claim your $5 FIFA spot <span class="arrow">→</span></a>
+      <a href="https://wa.me/919818071833?text=Hi!%20I%27m%20interested%20in%20the%20%245%20FIFA-season%20TradeRoot%20session." target="_blank" rel="noopener" class="btn-ghost">Chat on WhatsApp</a>
     </div>
-    <p class="micro">$47 for the first 15 clients. 60 minutes. Both of us. The work starts in the first session.</p>
+    <p class="micro">$5 for the FIFA season — 90% off. 60 minutes. Both of us. We'll message you on WhatsApp with your payment link.</p>
     <p class="tagline">Find the root. Fix the trade.</p>
   </div>
 </section>
@@ -1208,7 +1187,7 @@
 </footer>
 
 <!-- ============ STICKY MOBILE CTA ============ -->
-<a href="https://cal.com/traderoot/free-10-min-call" target="_blank" rel="noopener" class="sticky-cta" id="stickyCta">Book a free call →</a>
+<a href="#" data-tally-open="MeGWBE" data-tally-layout="modal" data-tally-width="540" class="sticky-cta" id="stickyCta">Claim your $5 FIFA spot →</a>
 
 <script>
 /* ==== NAV + STICKY CTA (IntersectionObserver — no scroll listener) ==== */
@@ -1266,5 +1245,8 @@ window.addEventListener('message', (e) => {
 });
 try{ window.parent.postMessage({type:'__edit_mode_available'}, '*'); }catch(e){}
 </script>
+
+<!-- ============ TALLY EMBED ============ -->
+<script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
